@@ -1,0 +1,35 @@
+nav {
+    background: var(--light-green);
+}
+
+.nav__section {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0;
+}
+
+.menu {
+    display: flex;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+    gap: 60px;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item a:hover {
+    color: #598D66;
+}
+
+
+
+
+
+
+

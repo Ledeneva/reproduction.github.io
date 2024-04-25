@@ -1,0 +1,180 @@
+.main__section {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    margin-bottom: 69px;
+}
+
+.section-right {
+    padding: 144px 0;
+}
+
+.main__h1 {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 110%;
+    color: #2c2d35;
+    margin-bottom: 20px;
+}
+
+.span-h1 {
+    color: #598D66;
+}
+
+.main__text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #86928b;
+    margin-bottom: 60px;
+}
+
+.main__btn {
+    background: none;
+    border: 1px solid #598d66;
+    padding: 20px 60px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #598d66;
+}
+
+.main__btn:hover {
+    background: #376B44;
+    border: none;
+    color: #FFFFFF;
+}
+
+/* каталог репродукций */
+.reproductions {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+    margin-bottom: 70px;
+}
+
+.reproductions__select {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.reproductions__select h3 {
+
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 110%;
+    color: #2c2d35;
+}
+
+.select {
+    display: flex;
+    gap: 32px;
+}
+.countries {
+    height: 43px;
+    padding: 10px 20px;
+    background: var(--light-green);
+    border: none;
+    border-radius: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+}
+.countries:hover {
+    background: var(--dark-green);
+    color: #FFFFFF;
+}
+
+.cards-reproduction {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+
+}
+
+.card-item {
+    padding: 20px;
+    background: var(--light-green);
+}
+
+.card-item img {
+    width: 100%;
+}
+
+.author {
+    margin: 20px 0 10px 0;
+    font-size: 18px;
+    color: #86928b;
+}
+.card-name {
+    font-size: 30px;
+    color: #2c2d35;
+    margin-bottom: 8px;
+}
+
+.character {
+    font-size: 18px;
+    color: #2c2d35;
+    margin-bottom: 30px;
+}
+
+.price {
+    font-size: 24px;
+    color: #598d66;
+    margin-bottom: 20px;
+}
+
+.card-btn {
+    border: 1px solid #598d66;
+    padding: 20px 106px;
+    background: none;
+    font-size: 20px;
+    color: #598d66;
+}
+.card-btn:hover {
+    border: none;
+    background: var(--dark-green);
+    color: #FFFFFF;
+}
+
+/* section PROMO */
+.promo {
+    background-image: url("/pictures/rep1/pic_background.png");
+}
+
+.promo__wrapper {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 70px 15px;
+}
+
+.promo-star {
+    display: flex;
+    align-items: center;
+}
+.promo-star h3 {
+    font-size: 40px;
+    line-height: 100%;
+    color: #f4f6f5;
+}
+.promo__text {
+    font-size: 18px;
+    line-height: 150%;
+    color: #fff;
+}
+
+.promo__btn {
+    margin-top: 60px;
+    background: #EEDB6D;
+    border: none;
+    padding: 21px 60px;
+    font-size: 20px;
+    color: #2c2d35;
+}

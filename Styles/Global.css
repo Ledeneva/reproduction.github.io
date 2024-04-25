@@ -1,0 +1,21 @@
+:root {
+    --light-green: #E1EDE6;
+    --dark-green: #376B44;
+    --font-family: "Raleway", sans-serif;
+}
+
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:hover, a:active  {
+    text-decoration: none;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    color: #2c2d35;
+}
