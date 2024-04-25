@@ -1,5 +1,6 @@
 nav {
     background: var(--light-green);
+    width: 100%;
 }
 
 .nav__section {
@@ -27,7 +28,11 @@ nav {
     color: #598D66;
 }
 
-
+@media (max-width: 760px) {
+    .nav__section {
+        padding: 38px 39px;
+    }
+}
 
 
 

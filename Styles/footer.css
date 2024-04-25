@@ -7,7 +7,7 @@
     margin: 0  auto;
     padding: 23px 15px;
     display: flex;
-    justify-content: space-between;
+    gap: 7.99vw;
     align-items: start;
 }
 
@@ -22,6 +22,12 @@
     font-size: 18px;
     color: #86928b;
 }
+
+.footer__contacts-wrapper {
+    display: flex;
+    gap: 17.22vw;
+}
+
 .footer-block {
     display: flex;
     gap: 60px;
@@ -43,6 +49,7 @@
     gap: 6px;
 }
 
+
 .social-icons {
     display: flex;
     gap: 30px;
@@ -53,4 +60,21 @@
     font-size: 12px;
     line-height: 120%;
     color: #86928b;
+}
+
+@media (max-width: 768px) {
+    
+    .footer-wrapper {
+      display: block;
+      padding: 23px 39px;
+    }
+    .footer__contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .footer__contacts-wrapper {
+        gap: 10.87vw;
+    }
 }
