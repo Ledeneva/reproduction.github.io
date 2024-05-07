@@ -10,6 +10,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #F4F6F5;
 }
 
 a, a:hover, a:active  {

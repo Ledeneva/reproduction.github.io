@@ -8,20 +8,36 @@ nav {
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 38px 0;
+    align-items: center;
+    padding: 31px 15px;
 }
+
 
 .menu {
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 60px;
+}
+
+.menu-items {
+    display: flex;
     font-family: var(--font-family);
     font-weight: 500;
-    font-size: 20px;
     color: #2c2d35;
     gap: 60px;
+    padding: 0;
+    margin: 0;
 }
 
 .menu-item {
     list-style: none;
+    white-space: nowrap;
+
+}
+
+.menu-item a {
+    font-size: 20px;
 }
 
 .menu-item a:hover {
@@ -32,8 +48,96 @@ nav {
     .nav__section {
         padding: 38px 39px;
     }
+    .menu-item a {
+        font-size: 18px;
+    }
 }
 
+@media (max-width: 576px) {
+    .nav__section {
+        display: flex;
+        flex-direction: column;
+        padding: 16px 33px;
+    }
+    .nav__img{
+        max-width: 100%;
+        margin: 0 auto;
+        padding-bottom: 16px;
+    }
+    .menu {
+        padding: 0;
+        padding-top: 16px;
+        border-top: 1px solid #C3D1C6;
+        justify-content: space-between;
+    }
+
+    .menu-items {
+        margin: 0;
+        
+    }
+
+
+}
+
+.menu-burger-icon {
+    display: none;
+}
+
+.menu {
+    width: 100%;
+}
+.line1, .line2, .line3 {
+    border-radius: 15px;
+    width: 20px;
+    background: black;
+    height: 2px;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+.active .line1  {
+    transform: translate(0, 8px) rotate(45deg);
+}
+.active .line2 {
+    opacity: 0;
+}
+.active .line3 {
+    transform: translate(0, -8px) rotate(-45deg);
+
+}
+
+
+
+@media (max-width: 460px) {
+
+    
+    .menu-burger-icon {
+        display: block;
+    }
+    .menu-items {
+        
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        gap: 50px;
+        right: 100%;
+        background: var(--light-green);
+        width: 100%;
+        padding-bottom: 100%;
+        padding-top: 50px;
+        transition: 0.4s;
+    }
+    .menu-item {
+        padding-left: 30px;
+        
+    }
+    .menu-burger-icon {
+        z-index: 3;
+    }
+    .check {
+        right: 0;
+    }
+}
 
 
 

@@ -1,22 +1,24 @@
-.main__section {
+
+.main__section1 {
     max-width: 1110px;
+    display: grid;
     margin: 0 auto;
-    display: flex;
+    grid-template-columns: repeat(12, 1fr);
     gap: 30px;
-    margin-bottom: 69px;
 }
 
-.main__img {
-    width: 100%;
+.main__section1 img {
+    max-width: 100%;
+    grid-column: 6 span;
 }
-
-.main__img img {
-    width: 100%;
+.section-right {
+    grid-column: 6 span;
 }
 
 .section-right {
     padding: 144px 0;
 }
+
 
 .main__h1 {
     font-family: var(--font-family);
@@ -102,7 +104,7 @@
 
 .cards-reproduction {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
 }
 
@@ -111,6 +113,7 @@
 }
 
 .card-item {
+    box-sizing: border-box;
     padding: 20px;
     background: var(--light-green);
 }
@@ -128,12 +131,14 @@
     font-size: 30px;
     color: #2c2d35;
     margin-bottom: 8px;
+    white-space: nowrap;
 }
 
 .character {
     font-size: 18px;
     color: #2c2d35;
     margin-bottom: 30px;
+    
 }
 
 .price {
@@ -143,8 +148,9 @@
 }
 
 .card-btn {
+    width: 100%;
     border: 1px solid #598d66;
-    padding: 20px 106px;
+    padding: 20px 0;
     background: none;
     font-size: 20px;
     color: #598d66;
@@ -194,20 +200,27 @@
 .team {
     max-width: 1110px;
     margin: 0 auto;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
     gap: 30px;
     padding: 70px 15px;
 }
 
-
+.team-left {
+    grid-column: 5 span;
+}
+.team-left img {
+    max-width: 100%;
+}
 
 
 .team-wrapper {
-    margin-top: 124px;
+    grid-column: 7 span;
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 100%;
+    margin-top: 124px;
 }
 
 .team__name {
@@ -230,11 +243,6 @@
 
 
 @media (max-width: 768px) {
-    .team {
-        display: block;
-        padding: 70px 39px;
-
-    }
     .promo__wrapper {
         padding: 70px 39px;
     }
@@ -245,6 +253,11 @@
         font-size: 30px;
         line-height: 110%;
     }
+
+    .cards-reproduction {
+        grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    }
+
     .main__h1 {
         font-size: 40px;
         line-height: 100%;
@@ -253,4 +266,111 @@
         padding: 35px 0;
     }
     
+}
+
+@media (max-width: 690px) {
+    .cards-reproduction {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .author {
+        font-size: 16px;
+    }
+    .card-name {
+        font-size: 24px;
+    }
+    
+    .character {
+        font-size: 16px;
+        min-height: 37px;
+        margin-bottom: 11px;
+    }
+    
+    .price {
+        font-size: 20px;
+    }
+    
+    .card-btn {
+        font-size: 18px;
+    }
+
+    .reproductions__select {
+        display: block;
+    }
+    .promo-star {
+        gap: 20px;
+    }
+
+    .promo-star h3 {
+        font-size: 24px;
+        line-height: 100%;
+        color: #f4f6f5;
+    }
+    .promo__text {
+        font-size: 16px;
+    }
+    .promo__btn {
+        margin-top: 20px;
+        padding: 14px 33px;
+        font-size: 18px;
+    }
+
+
+    .team-left {
+        grid-column: 9 span;
+    }
+    .team-wrapper {
+        grid-column: 12 span;
+    }
+}
+
+@media (max-width: 576px) {
+    .main__section1 {
+        margin: 50px 0;
+    }
+
+    .section-right {
+        padding: 0;
+    }
+
+    .main__h1 {
+        font-size: 36px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+
+    .span-h1 {
+        font-size: 36px;
+    }
+    
+    .main__text {
+        font-size: 16px;
+        margin: 0;
+        margin-bottom: 11px;
+    }
+
+    .main__btn {
+        padding: 14.5px 41px;
+        font-size: 18px;
+    }
+    .main__section {
+        box-sizing: border-box;
+        padding: 0 33px;
+    }
+
+
+}
+
+
+@media (max-width: 460px) {
+    .main__section1 img {
+        display: none;
+    }
+    .main__section1 {
+        padding: 0 15px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-right {
+        grid-column: 2 span;
+    }
 }

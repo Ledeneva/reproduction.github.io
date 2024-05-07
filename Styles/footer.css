@@ -25,7 +25,8 @@
 
 .footer__contacts-wrapper {
     display: flex;
-    gap: 17.22vw;
+    justify-content: space-between;
+    flex-grow: 2;
 }
 
 .footer-block {
@@ -74,7 +75,31 @@
         align-items: center;
         margin-bottom: 30px;
     }
+
+
+}
+
+@media (max-width: 576px) {
+    .footer-wrapper {
+        display: block;
+        padding: 23px 33px;
+      }
     .footer__contacts-wrapper {
-        gap: 10.87vw;
+        display: block;
+    }
+    .footer-block {
+        border-bottom: 1px solid #C3D1C6;
+    }
+    .social {
+        padding-top: 16px;
+        width: 180px;
+        margin: 0 auto;
+    }
+
+    .social-icons {
+        justify-content: space-between;
+    }
+    .social-inf {
+        display: flex;
     }
 }

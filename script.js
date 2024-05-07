@@ -16,3 +16,8 @@ function activeElem(cityName) {
     countries.className = countries.className.replace(" visible", "");
 
 }
+
+function burgerMenu(active) {
+    active.classList.toggle("active");
+    document.getElementById("nav").classList.toggle("check");
+}
